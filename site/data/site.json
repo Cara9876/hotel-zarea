@@ -1,0 +1,254 @@
+{
+  "_comment": "Everything time-sensitive lives here. Verify against https://app.gov.md/privatizare/ and update verifiedAt.",
+  "verifiedAt": "2026-09-10",
+  "sourceUrl": "https://app.gov.md/privatizare/",
+  "listingUrl": "https://app.gov.md/companies/hotelul-zarea/",
+  "property": {
+    "name": "Hotel Zarea",
+    "legalName": "Î.S. „Hotelul Zarea”",
+    "idno": "1003600080200",
+    "address": "Strada Anton Pann 4, Chișinău, MD-2005",
+    "lat": 47.031244,
+    "lng": 28.836172,
+    "levels": 12,
+    "rooms": 137,
+    "usedArea": 6123.7,
+    "footprint": 1135.3,
+    "land": 0.3111,
+    "built": 1981,
+    "founded": 1992,
+    "ownership": "100% state-owned, administered by the Public Property Agency"
+  },
+  "transaction": {
+    "status": "Listed for privatisation",
+    "method": "Open outcry auction",
+    "currency": "MDL",
+    "price": 106000000,
+    "deposit": 10600000,
+    "depositNote": "10% of the initial price, counted toward the price for the winner",
+    "feeLegal": 6000,
+    "feeIndividual": 1500,
+    "deadline": "2026-10-19T12:00:00+03:00",
+    "auction": "2026-10-20T10:00:00+03:00",
+    "auctionPlace": "Public Property Agency, Strada Vasile Alecsandri 78, 4th floor, room 402, Chișinău",
+    "paymentDays": 20,
+    "organiser": "Public Property Agency",
+    "valuation": 102965000,
+    "valuationDate": "2025-12-31",
+    "conditions": [
+      "The civil-protection shelter in the basement (520 m², 400 persons, commissioned 1981) is public property. It is excluded from the sale, stays with the State, and the buyer must preserve and keep it operable, including during any reconstruction or modernisation.",
+      "The transformer station on the plot (cadastral no. 0100418.216.02) belongs to Premier Energy. Access and a right of way over 0.0260 ha must be maintained for its operation and upkeep."
+    ],
+    "steps": [
+      [
+        "Study the file",
+        "Consult the documents at the agency's office and visit the property by appointment, on working days 08:00 to 17:00."
+      ],
+      [
+        "Apply, on paper, at the agency",
+        "Submit the application form (Annex 1 to Government Decision 136/2009) at Strada Vasile Alecsandri 78, Chișinău, before the deadline, with the attachments listed in the notice and proof that the deposit and the fee have been paid. The notice provides no online channel."
+      ],
+      [
+        "Bid",
+        "Take part in the open outcry auction at the agency's office, in person or through an authorised representative."
+      ],
+      [
+        "Pay and sign",
+        "The winner pays within 20 days of the auction minutes. The contract is signed after Competition Council clearance."
+      ]
+    ],
+    "submission": {
+      "where": "In person, on paper, at the Public Property Agency, Strada Vasile Alecsandri 78, Chișinău",
+      "form": "Application form per Annex 1 to Government Decision 136/2009",
+      "attachments": [
+        "Moldovan companies: beneficial-owner declaration (Annex 1¹), State Register extract, registration decision, last financial statements, declaration of no incompatibility",
+        "Foreign companies: the same, legalised",
+        "Individuals: identity card copy and bank details for the deposit refund",
+        "Representatives: power of attorney",
+        "Proof of payment of the deposit and of the participation fee"
+      ],
+      "depositAccount": {
+        "iban": "MD32TRPCAA518410A00467AA",
+        "beneficiary": "MF – TR Chișinău-bugetul de stat, Agenția Proprietății Publice",
+        "fiscalCode": "1006601001090",
+        "bank": "MF – Trezoreria de Stat"
+      },
+      "feeAccount": {
+        "iban": "MD06TRPCAA518490C00467AA",
+        "beneficiary": "MF – TR Chișinău-bugetul de stat, Agenția Proprietății Publice",
+        "fiscalCode": "1006601001090",
+        "bank": "MF – Trezoreria de Stat"
+      },
+      "source": "Official Gazette no. 261-264, 19 June 2026, pp. 67-68"
+    }
+  },
+  "performance": {
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "revenue": [
+      2718754,
+      8430129,
+      8544840,
+      9520670,
+      9750388
+    ],
+    "stays": [
+      18598,
+      59454,
+      42523,
+      48112,
+      50552
+    ],
+    "netProfit": [
+      -1085500,
+      326190,
+      7810,
+      196685,
+      28753
+    ],
+    "employees": [
+      18,
+      21,
+      19,
+      22,
+      24
+    ],
+    "longTermDebt": 0
+  },
+  "landmarks": [
+    [
+      "Parliament",
+      28.826295,
+      47.027109,
+      "Parlamentul Republicii Moldova",
+      "state"
+    ],
+    [
+      "Presidency",
+      28.828071,
+      47.028428,
+      "Președinția Republicii Moldova",
+      "state"
+    ],
+    [
+      "Government House",
+      28.831178,
+      47.023855,
+      "Casa Guvernului",
+      "state"
+    ],
+    [
+      "National Bank of Moldova",
+      28.838145,
+      47.029286,
+      "Banca Națională a Moldovei",
+      "finance"
+    ],
+    [
+      "Ministry of Finance",
+      28.838125,
+      47.02798,
+      "Ministerul Finanțelor",
+      "finance"
+    ],
+    [
+      "City Hall",
+      28.834456,
+      47.022643,
+      "Primăria Municipiului Chișinău",
+      "state"
+    ],
+    [
+      "Chișinău railway station",
+      28.8598,
+      47.0128,
+      "Gara feroviară Chișinău",
+      "transport"
+    ],
+    [
+      "Chișinău International Airport",
+      28.9376,
+      46.9296,
+      "Aeroportul Internațional Chișinău",
+      "transport"
+    ]
+  ],
+  "documents": [
+    [
+      "Investment profile",
+      "Public Property Agency and Invest Moldova, June 2026",
+      "assets/docs/profil-investitional-zarea-en.pdf",
+      "EN",
+      12045400
+    ],
+    [
+      "Official enterprise profile",
+      "Legal, cadastral and financial data",
+      "assets/docs/profil-oficial-zarea-ro.pdf",
+      "RO",
+      300422
+    ],
+    [
+      "Official Gazette notice no. 261-264",
+      "19 June 2026, auction rules and participation conditions",
+      "assets/docs/comunicat-mo-261-264-2026-06-19.pdf",
+      "RO",
+      369122
+    ],
+    [
+      "APP order no. 208",
+      "11 June 2026, listing for auction",
+      "assets/docs/ordin-app-208-2026-06-11.pdf",
+      "RO",
+      961646
+    ],
+    [
+      "Commission minutes no. 2",
+      "4 June 2026, price and special conditions",
+      "assets/docs/pv-2-comisie-2026-06-04.pdf",
+      "RO",
+      4634430
+    ],
+    [
+      "Valuation report, full",
+      "27 May 2026, 100% of equity",
+      "assets/docs/raport-evaluare-complet-2026-05-27.pdf",
+      "RO",
+      12151699
+    ],
+    [
+      "Valuation report, extract",
+      "Summary of value and methods",
+      "assets/docs/extras-raport-evaluare-zarea.pdf",
+      "RO",
+      213301
+    ],
+    [
+      "Information note",
+      "Context of the privatisation process",
+      "assets/docs/nota-informativa-zarea.pdf",
+      "RO",
+      304024
+    ]
+  ],
+  "contact": {
+    "organisation": "Public Property Agency",
+    "unit": "Privatisation and post-privatisation directorate",
+    "address": "Strada Vasile Alecsandri 78, Chișinău, MD-2012",
+    "phones": [
+      "+373 22 22 14 57",
+      "+373 67 86 86 86"
+    ],
+    "emails": [
+      "iulia.pavlov@app.gov.md",
+      "ludmila.balan@app.gov.md"
+    ],
+    "visitSubject": "Hotel Zarea: request for a site visit"
+  },
+  "_landmarksNote": "Distances list. Coordinates are approximate reference points; the map uses the exact outlines in data/landmarks.geojson."
+}

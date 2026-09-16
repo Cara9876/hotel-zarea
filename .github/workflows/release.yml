@@ -1,0 +1,48 @@
+name: Hosting package
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hosting-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Check site files
+        run: |
+          python3 tools/check_site.py
+          for file in site/js/*.js; do node --check "$file"; done
+      - name: Check nginx hosting
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y nginx
+          python3 tools/check_nginx.py
+      - name: Create hosting ZIP
+        run: |
+          VERSION="$(git show -s --format=%cd --date=format:%Y.%m.%d)-${GITHUB_SHA:0:12}"
+          echo "RELEASE_VERSION=$VERSION" >> "$GITHUB_ENV"
+          python3 tools/package.py --version "$VERSION"
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v$RELEASE_VERSION"
+          printf 'Pachet de publicare Hotel Zarea.\n\nCommit: `%s`\n\nPublicați conținutul `site/` și urmați `DEPLOYMENT.md` din arhivă.\n' "$GITHUB_SHA" > /tmp/zarea-release-notes.md
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/hotel-zarea-current.zip dist/hotel-zarea-current.zip.sha256 --clobber
+          else
+            gh release create "$TAG" dist/hotel-zarea-current.zip dist/hotel-zarea-current.zip.sha256 --target "$GITHUB_SHA" --title "Hotel Zarea · $RELEASE_VERSION" --notes-file /tmp/zarea-release-notes.md --latest
+          fi

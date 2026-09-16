@@ -1,0 +1,58 @@
+# Hotel Zarea site — Apache hardening. Copy this file to the web root together with the site.
+# Requires mod_headers, mod_rewrite (optional), mod_mime. Pair with HTTPS (Let's Encrypt or the agency's certificate).
+
+Options -Indexes -MultiViews
+ServerSignature Off
+
+# Never serve dotfiles, version-control data, editor notes or build tooling
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+<FilesMatch "(?i)\.(md|py|sh|bak|orig|swp|log|sql|ini|env|yml|yaml|toml|lock)$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 404 /\.git
+
+# Only the request methods a static site needs
+<LimitExcept GET HEAD>
+    Require all denied
+</LimitExcept>
+
+<IfModule mod_headers.c>
+    Header always set Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob: https://tiles.openfreemap.org; font-src 'self'; media-src 'self'; connect-src 'self' https://tiles.openfreemap.org; worker-src blob:; child-src blob:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Cross-Origin-Resource-Policy "same-origin"
+    # Enable once HTTPS works on the final domain (browsers remember it for a year):
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" "expr=%{HTTPS} == 'on'"
+    Header unset X-Powered-By
+    Header unset Server
+
+    # PDFs open in the browser but are never treated as anything else
+    <FilesMatch "(?i)\.pdf$">
+        Header set Content-Disposition "inline"
+    </FilesMatch>
+    # Revalidate files because filenames can be reused between releases.
+    Header set Cache-Control "no-cache"
+
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType image/avif .avif
+    AddType image/webp .webp
+    AddType video/mp4 .mp4
+    AddType font/woff2 .woff2
+    AddType application/geo+json .geojson
+    AddType application/json .json
+    AddCharset utf-8 .html .css .js .json .geojson
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Force HTTPS (leave commented until the certificate is installed)
+    # RewriteCond %{HTTPS} !=on
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
