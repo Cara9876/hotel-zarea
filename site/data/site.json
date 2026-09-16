@@ -1,6 +1,6 @@
 {
   "_comment": "Everything time-sensitive lives here. Verify against https://app.gov.md/privatizare/ and update verifiedAt.",
-  "verifiedAt": "2026-09-10",
+  "verifiedAt": "2026-09-16",
   "sourceUrl": "https://app.gov.md/privatizare/",
   "listingUrl": "https://app.gov.md/companies/hotelul-zarea/",
   "property": {
@@ -181,10 +181,10 @@
   "documents": [
     [
       "Investment profile",
-      "Public Property Agency and Invest Moldova, June 2026",
-      "assets/docs/profil-investitional-zarea-en.pdf",
+      "Updated profile prepared by Invest Moldova Agency",
+      "assets/docs/profil-investitional-zarea-en-2026-09-16.pdf",
       "EN",
-      12045400
+      977455
     ],
     [
       "Official enterprise profile",
@@ -192,6 +192,13 @@
       "assets/docs/profil-oficial-zarea-ro.pdf",
       "RO",
       300422
+    ],
+    [
+      "Official Gazette notice: auction extension",
+      "14 August 2026, applications until 19 October; auction on 20 October",
+      "assets/docs/prelungire-licitatie-mo-379-381-2026-08-14.pdf",
+      "RO",
+      346078
     ],
     [
       "Official Gazette notice no. 261-264",
@@ -216,10 +223,10 @@
     ],
     [
       "Valuation report, full",
-      "27 May 2026, 100% of equity",
-      "assets/docs/raport-evaluare-complet-2026-05-27.pdf",
+      "Updated report and annexes, valuation as at 31 December 2025",
+      "assets/docs/raport-evaluare-zarea-actualizat-2026-09-16.pdf",
       "RO",
-      12151699
+      38387493
     ],
     [
       "Valuation report, extract",

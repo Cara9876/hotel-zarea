@@ -299,5 +299,11 @@ window.ZareaRomanian = Object.freeze({
   "about {height} m · {levels} floors": "aproximativ {height} m · {levels} niveluri",
   "about {height} m · 1 floor": "aproximativ {height} m · 1 nivel",
   "height unknown": "înălțime necunoscută",
-  "Outline and height from OpenStreetMap. Not part of the offer.": "Conturul și înălțimea provin din OpenStreetMap. Nu face parte din ofertă."
+  "Outline and height from OpenStreetMap. Not part of the offer.": "Conturul și înălțimea provin din OpenStreetMap. Nu face parte din ofertă.",
+  "Updated profile prepared by Invest Moldova Agency": "Profil actualizat de Agenția de Investiții",
+  "Updated report and annexes, valuation as at 31 December 2025": "Raport actualizat și anexe, evaluare la 31 decembrie 2025",
+  "Official Gazette notice: auction extension": "Comunicatul din Monitorul Oficial: prelungirea licitației",
+  "14 August 2026, applications until 19 October; auction on 20 October": "14 august 2026, cereri până la 19 octombrie; licitația pe 20 octombrie",
+  "Applications extended to 19 October 2026; auction on 20 October 2026.": "Depunerea cererilor prelungită până la 19 octombrie 2026; licitația pe 20 octombrie 2026.",
+  "Read the APP extension announcement": "Citește anunțul APP privind prelungirea"
 });

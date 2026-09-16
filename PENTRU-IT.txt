@@ -1,6 +1,15 @@
 Bună ziua,
 
-Vă transmit site-ul Hotel Zarea pentru instalare pe hosting.
+Vă transmit versiunea actualizată a site-ului Hotel Zarea, din 16 septembrie 2026.
+Acest pachet înlocuiește versiunea transmisă anterior.
+
+Actualizarea include profilul investițional al Agenției de Investiții, raportul
+de evaluare actualizat, extrasul din Monitorul Oficial privind prelungirea
+licitației și linkul la anunțul APP. Termenul de depunere a cererilor este
+19 octombrie 2026, ora 12:00; licitația este pe 20 octombrie 2026, ora 10:00.
+
+Pentru actualizare, înlocuiți integral directorul publicat, conform DEPLOYMENT.txt,
+și goliți cache-ul dacă infrastructura de hosting folosește unul.
 
 Site-ul este static, fără backend sau bază de date. Publicați conținutul
 directorului site/ din arhivă. Instrucțiunile complete sunt în DEPLOYMENT.txt;
