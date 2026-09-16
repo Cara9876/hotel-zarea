@@ -9,8 +9,8 @@ HTML, CSS și JavaScript static, fără backend, bază de date sau compilare.
 Arhiva include site-ul, configurațiile de server, instrucțiunile de instalare și sumele de control.
 Pentru instalare se folosesc fișierele din `site/`. Instrucțiuni complete: [DEPLOYMENT.md](DEPLOYMENT.md).
 
-Repository-ul este privat. Linkurile GitHub funcționează pentru conturile cărora li s-a acordat acces.
-Arhiva ZIP poate fi transmisă separat echipei IT.
+Repository-ul este public și poate fi accesat prin link, fără invitație.
+Arhiva ZIP poate fi descărcată din Releases sau transmisă separat echipei IT.
 
 ## Structură
 
