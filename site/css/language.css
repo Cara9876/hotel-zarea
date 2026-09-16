@@ -1,4 +1,4 @@
-/* Language choices share the approved header's type and champagne accent. */
+/* Language switch and header layout. */
 .top { grid-template-columns: auto minmax(0, 1fr) auto; }
 .top > .nav { justify-self: center; }
 .top__actions { display: flex; align-items: center; justify-content: flex-end; gap: 22px; }

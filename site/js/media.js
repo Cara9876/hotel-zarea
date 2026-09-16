@@ -1,4 +1,4 @@
-/* Local films and the real-property gallery. All media stays on this origin. */
+/* Playback and galleries for property photographs, films and architectural concepts. */
 (function () {
   'use strict';
   const I = window.ZareaI18n, t = I.t;

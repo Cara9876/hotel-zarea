@@ -1,4 +1,4 @@
-/* New media within the approved page structure. */
+/* Hero film, media galleries and the full-screen viewer. */
 .hero__poster, .hero__poster img, .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 50%; }
 .hero__poster img, .hero__video { filter: saturate(0.8) brightness(0.78); }
 .hero__video { opacity: 0; transition: opacity .45s ease; }
