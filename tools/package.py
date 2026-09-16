@@ -25,7 +25,7 @@ def main():
     paths = []
     for name in ('site', 'server', 'licenses'):
         paths.extend(p for p in (ROOT / name).rglob('*') if p.is_file())
-    paths.extend(ROOT / name for name in ('DEPLOYMENT.md', 'THIRD_PARTY_NOTICES.md'))
+    paths.extend(ROOT / name for name in ('DEPLOYMENT.txt', 'THIRD_PARTY_NOTICES.md'))
     entries = {}
     for path in sorted(paths):
         if path.is_symlink() or path.name.startswith('.') or '__pycache__' in path.parts:

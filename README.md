@@ -14,7 +14,7 @@ Configurațiile din `server/` sunt pentru hostingul instituției și nu se aplic
 
 [Deschide versiunea curentă](https://github.com/Cara9876/hotel-zarea/releases/latest) și descarcă **hotel-zarea-current.zip**.
 Arhiva include site-ul, configurațiile de server, instrucțiunile de instalare și sumele de control.
-Pentru instalare se folosesc fișierele din `site/`. Instrucțiuni complete: [DEPLOYMENT.md](DEPLOYMENT.md).
+Pentru instalare se folosesc fișierele din `site/`. Instrucțiuni complete: [DEPLOYMENT.txt](DEPLOYMENT.txt).
 
 Repository-ul este public și poate fi accesat prin link, fără invitație.
 Arhiva ZIP poate fi descărcată din Releases sau transmisă separat echipei IT.

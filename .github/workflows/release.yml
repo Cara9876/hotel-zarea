@@ -40,7 +40,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           TAG="v$RELEASE_VERSION"
-          printf 'Pachet de publicare Hotel Zarea.\n\nCommit: `%s`\n\nPublicați conținutul `site/` și urmați `DEPLOYMENT.md` din arhivă.\n' "$GITHUB_SHA" > /tmp/zarea-release-notes.md
+          printf 'Pachet de publicare Hotel Zarea.\n\nCommit: `%s`\n\nPublicați conținutul `site/` și urmați `DEPLOYMENT.txt` din arhivă.\n' "$GITHUB_SHA" > /tmp/zarea-release-notes.md
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" dist/hotel-zarea-current.zip dist/hotel-zarea-current.zip.sha256 --clobber
           else
