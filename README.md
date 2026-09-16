@@ -13,7 +13,7 @@ Configurațiile din `server/` sunt pentru hostingul instituției și nu se aplic
 ## Descărcare pentru hosting
 
 [Deschide versiunea curentă](https://github.com/Cara9876/hotel-zarea/releases/latest) și descarcă **hotel-zarea-current.zip**.
-Arhiva include site-ul, configurațiile de server, instrucțiunile de instalare și sumele de control.
+Arhiva include site-ul, configurațiile de server, instrucțiunile de instalare și licențele componentelor.
 Pentru instalare se folosesc fișierele din `site/`. Instrucțiuni complete: [DEPLOYMENT.txt](DEPLOYMENT.txt).
 
 Repository-ul este public și poate fi accesat prin link, fără invitație.
@@ -57,7 +57,8 @@ Pentru împachetare locală, după commit:
 python3 tools/package.py --version 2026.09.16
 ```
 
-Rezultatul apare în `dist/`. Fiecare pachet conține în `RELEASE.json` versiunea și commitul sursă.
+Rezultatul apare în `dist/`. Versiunea și commitul sursă sunt consemnate în Release pe GitHub.
+Arhiva include `PENTRU-IT.txt` ca introducere și `DEPLOYMENT.txt` cu instrucțiunile complete.
 
 ## Conținut și componente
 

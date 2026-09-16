@@ -1,0 +1,17 @@
+Bună ziua,
+
+Vă transmit site-ul Hotel Zarea pentru instalare pe hosting.
+
+Site-ul este static, fără backend sau bază de date. Publicați conținutul
+directorului site/ din arhivă. Instrucțiunile complete sunt în DEPLOYMENT.txt;
+configurațiile pentru Apache, nginx și IIS sunt în server/.
+
+Folderul licenses/ și THIRD_PARTY_NOTICES.md conțin licențele și informațiile
+despre componentele externe folosite.
+
+Limba implicită este engleza; româna este disponibilă prin selectorul RO.
+
+După instalare, vă rog să transmiteți adresa pentru verificarea finală a
+paginii, hărții, filmelor și documentelor, pe desktop și mobil.
+
+Mulțumesc.

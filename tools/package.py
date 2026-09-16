@@ -2,7 +2,6 @@
 """Create a reproducible hosting package from the checked-out commit."""
 import argparse
 import hashlib
-import json
 import re
 import subprocess
 import zipfile
@@ -25,16 +24,12 @@ def main():
     paths = []
     for name in ('site', 'server', 'licenses'):
         paths.extend(p for p in (ROOT / name).rglob('*') if p.is_file())
-    paths.extend(ROOT / name for name in ('DEPLOYMENT.txt', 'THIRD_PARTY_NOTICES.md'))
+    paths.extend(ROOT / name for name in ('PENTRU-IT.txt', 'DEPLOYMENT.txt', 'THIRD_PARTY_NOTICES.md'))
     entries = {}
     for path in sorted(paths):
         if path.is_symlink() or path.name.startswith('.') or '__pycache__' in path.parts:
             raise SystemExit(f'Unexpected file in release: {path}')
         entries[path.relative_to(ROOT).as_posix()] = path.read_bytes()
-    entries['RELEASE.json'] = (json.dumps({'version': args.version, 'commit': commit,
-        'siteDirectory': 'site', 'fileCount': len(entries)}, indent=2) + '\n').encode()
-    entries['SHA256SUMS.txt'] = ''.join(f'{hashlib.sha256(data).hexdigest()}  {name}\n'
-        for name, data in sorted(entries.items())).encode()
     out = ROOT / 'dist'
     out.mkdir(exist_ok=True)
     archive = out / 'hotel-zarea-current.zip'
@@ -46,11 +41,11 @@ def main():
             bundle.writestr(info, data)
     with zipfile.ZipFile(archive) as bundle:
         assert bundle.testzip() is None
-        for line in bundle.read('SHA256SUMS.txt').decode().splitlines():
-            digest, name = line.split('  ', 1)
-            assert hashlib.sha256(bundle.read(name)).hexdigest() == digest, name
+        assert set(bundle.namelist()) == set(entries)
+        for name, data in entries.items():
+            assert bundle.read(name) == data, name
     digest = hashlib.sha256(archive.read_bytes()).hexdigest()
-    print(f'{archive.name}: {len(entries)} entries, {archive.stat().st_size:,} bytes, SHA-256 {digest}')
+    print(f'{args.version} ({commit}): {archive.name}: {len(entries)} entries, {archive.stat().st_size:,} bytes, SHA-256 {digest}')
 
 
 if __name__ == '__main__':

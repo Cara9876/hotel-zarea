@@ -13,7 +13,7 @@ Alegerea nu se memorează în browser. Site-ul nu include autentificare sau form
 
 Publicare
 
-1. Dezarhivați pachetul într-un director nou și verificați versiunea din RELEASE.json.
+1. Dezarhivați pachetul într-un director nou.
 2. Publicați conținutul directorului site/ în rădăcina web a domeniului dedicat.
    server/, licenses/ și documentația se păstrează în afara rădăcinii web.
 3. Instalați configurația pentru serverul folosit, conform instrucțiunilor de mai jos.
@@ -55,10 +55,10 @@ verificarea domeniului, certificatului și eventualului proxy de producție.
 
 Actualizare și revenire
 
-La o actualizare, descărcați ultima Release reușită, păstrați copia versiunii publicate și instalați noul
+La o actualizare, folosiți noul pachet ZIP primit, păstrați copia versiunii publicate și instalați noul
 director site/ complet. Fișierele se revalidează prin cache; goliți și cache-ul unui eventual CDN/proxy.
 Evitați copierea treptată peste site-ul activ: folosiți directoare de versiune și comutați rădăcina/symlinkul
 după verificare, conform procedurii IT. Revenirea constă în reactivarea directorului versiunii precedente.
 
-Actualizarea repository-ului generează pachetul, dar instalarea pe hosting rămâne responsabilitatea IT.
+Instalarea pe hosting rămâne responsabilitatea IT.
 Prețurile, termenele și documentele sunt validate de responsabilul de conținut.
