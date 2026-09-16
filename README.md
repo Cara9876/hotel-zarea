@@ -5,6 +5,8 @@ HTML, CSS și JavaScript static, fără backend, bază de date sau compilare.
 
 **Site public:** https://cara9876.github.io/hotel-zarea/
 
+Linkul principal se deschide în engleză. Româna este disponibilă prin selectorul RO sau `?lang=ro`.
+
 Previzualizarea GitHub Pages se actualizează automat din `site/` la fiecare push pe `main`.
 Configurațiile din `server/` sunt pentru hostingul instituției și nu se aplică pe GitHub Pages.
 

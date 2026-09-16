@@ -8,7 +8,8 @@ Fișierele site-ului ocupă aproximativ 136 MiB; păstrați spațiu și pentru o
 
 Harta solicită resurse de la `https://tiles.openfreemap.org` direct din browserul vizitatorului.
 Fonturile, imaginile, biblioteca MapLibre, videoclipurile și documentele sunt locale.
-Site-ul memorează alegerea limbii în localStorage; nu include autentificare sau formulare de colectare.
+Limba implicită este engleza. Parametrul `?lang=ro` selectează româna; `?lang=en` selectează engleza.
+Alegerea nu se memorează în browser. Site-ul nu include autentificare sau formulare de colectare.
 
 ## Publicare
 

@@ -1,13 +1,9 @@
-/* One page, two languages. Query choice takes precedence over a remembered choice. */
+/* English by default; the language links select a translation through the URL. */
 (function () {
   'use strict';
-  const storageKey = 'zarea-language';
   const supported = value => value === 'en' || value === 'ro';
   const requested = new URL(location.href).searchParams.get('lang');
-  let remembered;
-  try { remembered = localStorage.getItem(storageKey); } catch (_) { /* Storage is optional. */ }
-  const lang = supported(requested) ? requested : supported(remembered) ? remembered : 'en';
-  try { localStorage.setItem(storageKey, lang); } catch (_) { /* Query links still work. */ }
+  const lang = supported(requested) ? requested : 'en';
   const dictionary = lang === 'ro' ? window.ZareaRomanian : {};
   const own = key => Object.prototype.hasOwnProperty.call(dictionary, key);
   const t = (value, variables) => {
