@@ -50,7 +50,6 @@ def main():
             digest, name = line.split('  ', 1)
             assert hashlib.sha256(bundle.read(name)).hexdigest() == digest, name
     digest = hashlib.sha256(archive.read_bytes()).hexdigest()
-    (out / 'hotel-zarea-current.zip.sha256').write_text(f'{digest}  {archive.name}\n')
     print(f'{archive.name}: {len(entries)} entries, {archive.stat().st_size:,} bytes, SHA-256 {digest}')
 
 

@@ -42,7 +42,7 @@ jobs:
           TAG="v$RELEASE_VERSION"
           printf 'Pachet de publicare Hotel Zarea.\n\nCommit: `%s`\n\nPublicați conținutul `site/` și urmați `DEPLOYMENT.txt` din arhivă.\n' "$GITHUB_SHA" > /tmp/zarea-release-notes.md
           if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release upload "$TAG" dist/hotel-zarea-current.zip dist/hotel-zarea-current.zip.sha256 --clobber
+            gh release upload "$TAG" dist/hotel-zarea-current.zip --clobber
           else
-            gh release create "$TAG" dist/hotel-zarea-current.zip dist/hotel-zarea-current.zip.sha256 --target "$GITHUB_SHA" --title "Hotel Zarea · $RELEASE_VERSION" --notes-file /tmp/zarea-release-notes.md --latest
+            gh release create "$TAG" dist/hotel-zarea-current.zip --target "$GITHUB_SHA" --title "Hotel Zarea · $RELEASE_VERSION" --notes-file /tmp/zarea-release-notes.md --latest
           fi
