@@ -3,6 +3,11 @@
 Site de prezentare a Hotelului Zarea pentru cumpărători și investitori, în engleză și română.
 HTML, CSS și JavaScript static, fără backend, bază de date sau compilare.
 
+**Site public:** https://cara9876.github.io/hotel-zarea/
+
+Previzualizarea GitHub Pages se actualizează automat din `site/` la fiecare push pe `main`.
+Configurațiile din `server/` sunt pentru hostingul instituției și nu se aplică pe GitHub Pages.
+
 ## Descărcare pentru hosting
 
 [Deschide versiunea curentă](https://github.com/Cara9876/hotel-zarea/releases/latest) și descarcă **hotel-zarea-current.zip**.
